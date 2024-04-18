@@ -2,6 +2,48 @@
 
 # Débuggez et testez un SaaS RH
 
+### Qu’allez-vous apprendre dans ce projet ?
+ 
+
+Ce projet vous confie la tâche de débugger et tester une application. Vous travaillerez sur des tests unitaires 
+et d'intégration en JavaScript et effectuerez des tests end-to-end manuels.
+
+Votre mission principale sera de corriger les bugs d’un système RH et de finaliser les tests. Vous commencerez 
+par **installer le back-end** et le front-end depuis des repos spécifiques.
+
+Vous serez ensuite chargé de déboguer certaines parties de l’application.
+
+Vous rédigerez et implémenterez des **tests unitaires en JavaScript** pour vérifier la validité et la fiabilité des 
+différentes composantes de l'application.
+
+Vous élaborerez également un **plan de test end-to-end** manuel pour assurer le bon fonctionnement du parcours employé 
+de l'application.
+
+Le **Chrome Debugger** sera utilisé pour le débogage de l'application, vous permettant de détecter et de résoudre les 
+problèmes de manière efficace.
+
+En plus des tests unitaires, vous écrirez des **tests d'intégration en JavaScript** pour vérifier l'interaction entre 
+les différentes parties de l'application.
+
+### En quoi ces compétences seront-elles importantes pour votre carrière ? 
+
+Le débogage et le test d'applications sont des compétences essentielles pour tout développeur web.
+
+Pouvoir écrire et implémenter des tests unitaires et d'intégration assure la qualité et la fiabilité du code.
+
+La maîtrise du débogage avec des outils comme le Chrome Debugger est cruciale pour résoudre rapidement les problèmes 
+dans les applications web.
+
+Ces compétences sont fondamentales pour garantir la livraison de solutions logicielles robustes et efficaces.
+
+### Objectifs pédagogiques
+* Ecrire des tests unitaires avec JavaScript
+* Rédiger un plan de test end-to-end manuel
+* Débugger une application web avec le Chrome Debugger
+* Ecrire des tests d'intégration avec JavaScript
+
+***
+
 ### Scénario :
 
 Vous êtes développeur front-end chez Billed, une entreprise qui produit des solutions Saas destinées aux équipes de ressources humaines.
@@ -104,6 +146,15 @@ Lead Developer @Billed
 
 Ça y est, vous avez toutes les informations pour démarrer la correction de cette application. C’est parti !
 
+***
+
+### Livrables :
+1. Un fichier au format TXT contenant le lien vers **le code à jour** sur un repo GitHub public.
+2. Un screenshot au format PNG du **rapport de tests Jest** sur l’ensemble des fichiers d’UI (_src/views_) et
+   des fichiers d’UX (_src/containers_).
+3. Un screenshot au format PNG du **rapport de couverture Jest**.
+4. Un document au format **PDF du plan de tests End-To-End** pour le parcours employé.
+
 ### Cours :
 [Testez l'interface de votre site](https://openclassrooms.com/fr/courses/3504461-testez-linterface-de-votre-site)
 
@@ -111,115 +162,13 @@ Lead Developer @Billed
 
 [Testez vos applications Front End avec JavaScript](https://openclassrooms.com/fr/courses/7159306-testez-vos-applications-front-end-avec-javascript)
 
+### Ressources :
+[Documentation de Jest
+](https://jestjs.io/docs/en/getting-started)
+
+[Ce cours sur React vous aidera à mieux comprendre le code de l'application](https://openclassrooms.com/fr/courses/7008001-debutez-avec-react)
+
+[Créez une application React complète](https://openclassrooms.com/fr/courses/7150606-creez-une-application-react-complete)
+
 ### Résultat final lors du passage de la soutenance :
 [Lien de la page de connexion Billed](https://google.com)
-
-
-
-
-
-
-
-
-___
-
-
-
-
-### ReadMe du repo du frontend
-
-
-
-#### L'architecture du projet :
-Ce projet, dit frontend, est connecté à un service API backend que vous devez aussi lancer en local.
-
-Le projet backend se trouve ici: https://github.com/OpenClassrooms-Student-Center/Billed-app-FR-back
-
-#### Organiser son espace de travail :
-Pour une bonne organization, vous pouvez créer un dossier bill-app dans lequel vous allez cloner le projet backend et par la suite, le projet frontend:
-
-Clonez le projet backend dans le dossier bill-app :
-```
-$ git clone https://github.com/OpenClassrooms-Student-Center/Billed-app-FR-Back.git
-```
-
-```
-bill-app/
-   - Billed-app-FR-Back
-```
-
-Clonez le projet frontend dans le dossier bill-app :
-```
-$ git clone https://github.com/OpenClassrooms-Student-Center/Billed-app-FR-Front.git
-```
-
-```
-bill-app/
-   - Billed-app-FR-Back
-   - Billed-app-FR-Front
-```
-
-#### Comment lancer l'application en local ?
-
-##### étape 1 - Lancer le backend :
-
-Suivez les indications dans le README du projet backend.
-
-##### étape 2 - Lancer le frontend :
-
-Allez au repo cloné :
-```
-$ cd Billed-app-FR-Front
-```
-
-Installez les packages npm (décrits dans `package.json`) :
-```
-$ npm install
-```
-
-Installez live-server pour lancer un serveur local :
-```
-$ npm install -g live-server
-```
-
-Lancez l'application :
-```
-$ live-server
-```
-
-Puis allez à l'adresse : `http://127.0.0.1:8080/`
-
-
-#### Comment lancer tous les tests en local avec Jest ?
-
-```
-$ npm run test
-```
-
-#### Comment lancer un seul test ?
-
-Installez jest-cli :
-
-```
-$npm i -g jest-cli
-$jest src/__tests__/your_test_file.js
-```
-
-#### Comment voir la couverture de test ?
-
-`http://127.0.0.1:8080/coverage/lcov-report/`
-
-#### Comptes et utilisateurs :
-
-Vous pouvez vous connecter en utilisant les comptes:
-
-##### administrateur : 
-```
-utilisateur : admin@test.tld 
-mot de passe : admin
-```
-##### employé :
-```
-utilisateur : employee@test.tld
-mot de passe : employee
-```
